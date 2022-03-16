@@ -7,15 +7,6 @@ We sort ASNs by the resulting bias in ascending order, i.e., the first ASN in th
 From the analysis, we **_omitted the stub ASes_**
 
 
-
-
-#### Table of Contents  
-- [Data](#data)  
-- [Results: CDFs of bias of RIPE RIS plus extra ASN](#results-cdfs-of-bias-of-ripe-ris-plus-extra-asn)  
-- [Results: CDFs of characteristics of top-K extra ASNs that reduce most the bias](#results-cdfs-of-characteristics-of-top-k-extra-asns-that-reduce-most-the-bias)
-- [Results: CDFs of characteristics of top-K extra ASNs that reduce most the bias (filtered by improvement)](#results-cdfs-of-characteristics-of-top-k-extra-asns-that-reduce-most-the-bias-filtered)
-
-
 ## Data 
 
 The file `sorted_asns_by_ascending_biases.json` has the format 
@@ -29,12 +20,11 @@ The file `sorted_asns_by_ascending_biases.json` has the format
 ```  
 where the keys are the bias dimensions and the values are the ordered lists (the first AS in the list reduces the most the bias); the key `total` corresponds to the aggregated bias along all dimensions.
 
+
 Based on a preliminary analysis (see results below) the most meaningful dimensions (i.e., keys of the dict in the json) to be further analyzed for this purpose are:
 - total
 - AS_rank_iso (i.e., location country)
 - peeringDB_info_traffic
-
-
 
 ## Results: CDFs of bias of RIPE RIS plus extra ASN 
 
